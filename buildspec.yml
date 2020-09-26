@@ -30,7 +30,7 @@ phases:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
   env:
-    parameter-store: aws ssm put-parameter --name JWT_SECRET --value "YourJWTSecret" --type SecureString      
+    parameter-store:
       JWT_SECRET: JWT_SECRET
   post_build:
     commands:
