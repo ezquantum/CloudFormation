@@ -1,0 +1,4 @@
+pyjwt:latest
+flask
+gunicorn
+pytest
